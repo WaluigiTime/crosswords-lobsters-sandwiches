@@ -1,4 +1,5 @@
 import "./styles.css";
+import data from "./sample_data.json";
 
 export default function App() {
   return (
@@ -6,7 +7,8 @@ export default function App() {
       <h1> Crossword Game! </h1>
       <button> Check </button>
 
-      <Table />
+      <GameBoard data={data.answerKey} />
+      <Clues data={data.clues} />
     </div>
   );
 }
@@ -18,29 +20,25 @@ export function Letter(props) {
 export function Star() {
   return <td> * </td>;
 }
-//How do we also make json tables
-// Row will represent each row
-// <Row number="0" />
-// <Row number="1" />
-// how do we make each row unique -- using props -- but HOW?
-// We need to nest Row inside of Table
-// We need to nest Letter inside of Row
-export function Row() {
+
+export function LittleClues(props) {
   return (
-    <tr>
-      <th> C1 </th>
-      <th> C2 </th>
-      <th> C3 </th>
-      <th> C4 </th>
-      <th> C5 </th>
-    </tr>
+    <p>
+      {props.clue.orientation} {props.clue.number}: {props.clue.stringValue}
+    </p>
   );
 }
+export function Clues(props) {
+  // props is an array
+  // Loop over props and pass each clue into the clue component
+  return <LittleClues clue={props.data[0]} />;
+}
 
-export function Table(props) {
+export function GameBoard(props) {
+  // loop over answer key
+  // if answerKey[i][j] == "" then star else input
   return (
     <table>
-      <Row />
       <tr>
         <Letter char="O" />
         <Letter char="M" />
@@ -79,4 +77,3 @@ export function Table(props) {
     </table>
   );
 }
-//comment 
