@@ -6,16 +6,24 @@
     ["", "", "", "R", ""],
     ["", "", "", "", ""]
   ],
-  "clues": [
+  "AcrossClues": [
     {
-      "orientation": "Across",
       "number": "1",
       "stringValue": "The team member that added sandwiches to the codename"
     },
     {
-      "orientation": "Across",
       "number": "2",
       "stringValue": "The other team member that added sandwiches to the codename"
+    }
+  ],
+  "DownClues": [
+    {
+      "number": "1",
+      "stringValue": "Hello world!"
+    },
+    {
+      "number": "2",
+      "stringValue": "This is a very long clue. Why is it so long? Because I wanted to make sure a long comment will look okay in our rendering"
     }
   ]
 }
