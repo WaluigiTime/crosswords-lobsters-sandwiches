@@ -1,0 +1,21 @@
+{
+  "answerKey": [
+    ["", "", "", "O", ""],
+    ["", "", "", "M", ""],
+    ["I", "S", "S", "A", "C"],
+    ["", "", "", "R", ""],
+    ["", "", "", "", ""]
+  ],
+  "clues": [
+    {
+      "orientation": "Across",
+      "number": "1",
+      "stringValue": "The team member that added sandwiches to the codename"
+    },
+    {
+      "orientation": "Across",
+      "number": "2",
+      "stringValue": "The other team member that added sandwiches to the codename"
+    }
+  ]
+}
