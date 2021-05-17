@@ -1,6 +1,8 @@
 import "./styles.css";
 import data from "./sample_data.json";
 
+//Questions for next week Issac :
+//How do we
 export default function App() {
   return (
     <div className="App">
@@ -26,7 +28,7 @@ export default function App() {
 }
 
 export function InputComponent(props) {
-  return <input type="textbox" />;
+  return <input type="textbox" size="1" />;
 }
 
 export function EmptySpace() {
@@ -42,6 +44,7 @@ export function Star() {
   return <td> * </td>;
 }
 
+//Talks about the across and down clues
 export function LittleClues(props) {
   return (
     <p>
@@ -49,14 +52,6 @@ export function LittleClues(props) {
     </p>
   );
 }
-
-function Visible() {}
-// //return (
-//   <ul>
-//   {animals.map(animal => (
-//     <li>{animal}</li>
-//   ))}
-// </ul>
 
 export function AcrossClues(props) {
   // props is an array
@@ -81,53 +76,21 @@ export function DownClues(props) {
     </div>
   );
 }
+
 export function GameBoard(props) {
-  // props.answerKey = [][]
-  // Loop over props.answerKey
-
-  // loop over answer key
-
-  //for (i = 0; i < props.answerKey.length ; i++) {
-
-  //};
-  // if answerKey[i][j] == "" then star else input
   return (
     <table>
-      <tr>
-        <InputComponent />
-        <Letter char="M" />
-        <Letter char="A" />
-        <Letter char="R" />
-        <Letter char="I" />
-      </tr>
-      <tr>
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-        <Letter char="S" />
-      </tr>
-      <tr>
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-        <Letter char="S" />
-      </tr>
-      <tr>
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-        <Letter char="A" />
-      </tr>
-      <tr>
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-        <Letter char="C" />
-      </tr>
+      {props.data.map((innerArray) => {
+        return (
+          <tr>
+            {innerArray.map((StringAnswer) => {
+              return (
+                <td>{StringAnswer === "" ? <Star /> : <InputComponent />}</td>
+              );
+            })}
+          </tr>
+        );
+      })}
     </table>
   );
 }
