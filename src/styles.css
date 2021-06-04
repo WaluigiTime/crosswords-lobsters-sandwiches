@@ -2,3 +2,25 @@
   font-family: sans-serif;
   text-align: center;
 }
+#across-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 5px solid rgb(219, 101, 101);
+}
+#gameboard {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border: 5px solid rgb(78, 122, 143);
+}
+#gameboard td {
+  width: 50px;
+  height: 50px;
+}
+#gameboard td input {
+  width: 50px;
+  height: 50px;
+}
+#gameboard td.star {
+  color: white;
+}

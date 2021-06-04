@@ -1,5 +1,5 @@
 import "./styles.css";
-import data from "./sample_data.json";
+import data from "./real_cross.json";
 
 //Questions for next week Issac :
 //How do we
@@ -7,9 +7,11 @@ export default function App() {
   return (
     <div className="App">
       <h1> Crossword Game! </h1>
-      <button> Check </button>
-      <GameBoard data={data.answerKey} />
-      <table>
+      {/* <button> Check </button> */}
+      <div id="gameboard">
+        <GameBoard data={data.answerKey} clues={data.clueKey} />
+      </div>
+      <table id="across-table">
         <tr>
           <th> Across</th>
           <th> Down</th>
@@ -26,9 +28,8 @@ export default function App() {
     </div>
   );
 }
-
 export function InputComponent(props) {
-  return <input type="textbox" size="1" />;
+  return <input type="textbox" size="1" placeholder={props.clueNumber} />;
 }
 
 export function EmptySpace() {
@@ -41,7 +42,7 @@ export function Letter(props) {
 }
 
 export function Star() {
-  return <td> * </td>;
+  return <td class="star"> * </td>;
 }
 
 //Talks about the across and down clues
@@ -78,14 +79,24 @@ export function DownClues(props) {
 }
 
 export function GameBoard(props) {
+  // props.data = answerKey
+  // props.clues = clueKey
   return (
     <table>
-      {props.data.map((innerArray) => {
+      {props.data.map((innerArray, outerIndex) => {
         return (
           <tr>
-            {innerArray.map((StringAnswer) => {
+            {innerArray.map((StringAnswer, innerIndex) => {
               return (
-                <td>{StringAnswer === "" ? <Star /> : <InputComponent />}</td>
+                <td>
+                  {StringAnswer === "" ? (
+                    <Star />
+                  ) : (
+                    <InputComponent
+                      clueNumber={props.clues[outerIndex][innerIndex]}
+                    />
+                  )}{" "}
+                </td>
               );
             })}
           </tr>
