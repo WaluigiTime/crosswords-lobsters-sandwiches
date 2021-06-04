@@ -7,14 +7,14 @@
     ["", "", "", "", "a", "d", "v", "i", "s", "o", "r", "s", "", ""],
     ["", "", "", "", "y", "", "", "", "", "c", "", "", "", ""],
     ["", "", "", "", "", "", "a", "", "", "t", "", "", "", ""],
-    ["", "", "", "", "", "", "s", "", "", "o", "", "", "", ""],
+    ["", "", "", "", "", "", "s", "o", "r", "o", "i", "t", "y", ""],
     ["", "", "", "", "", "", "k", "", "", "r", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "a", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "m", "a", "j", "o", "r", ""],
     ["", "", "", "", "", "", "", "", "", "t", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "e", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "s", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    ["", "", "", "", "", "g", "l", "a", "r", "e", "", "", "", ""],
+    ["", "", "", "", "", "", "a", "", "", "s", "", "", "", ""],
+    ["", "", "", "", "", "", "b", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "s", "", "", "", "", "", "", ""]
   ],
   "clueKey": [
     ["", "", "", "", "", "", "", "", "", "", "", "1", "", ""],
@@ -24,11 +24,11 @@
     ["", "", "", "", "7", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "8", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "9", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "10", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "11 ", "12", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
     ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
@@ -36,27 +36,27 @@
   "AcrossClues": [
     {
       "number": "2",
-      "stringValue": "Students on honor rolls make good ones "
+      "stringValue": "Students on honor rolls make good ones"
     },
     {
       "number": "4",
-      "stringValue": "Important exam for college hopefuls ("
+      "stringValue": "Important exam for college hopefuls"
     },
     {
       "number": "5",
-      "stringValue": "They’re part of college students’ expenses ("
+      "stringValue": "They’re part of college students’ expenses"
     },
     {
       "number": "7",
-      "stringValue": "They’re part of college students’ expenses ("
+      "stringValue": "Faculty members appointed to students"
     },
     {
       "number": "9",
-      "stringValue": "They’re part of college students’ expenses ("
+      "stringValue": "Greek-letter college organization for women"
     },
     {
       "number": "10",
-      "stringValue": "They’re part of college students’ expenses ("
+      "stringValue": "College student's focus of study"
     },
     {
       "number": "11",
@@ -66,7 +66,7 @@
   "DownClues": [
     {
       "number": "1",
-      "stringValue": "Buildings in which college students live "
+      "stringValue": "Buildings in which college students live"
     },
     {
       "number": "3",
