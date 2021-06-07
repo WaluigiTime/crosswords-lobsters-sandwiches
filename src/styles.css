@@ -8,6 +8,9 @@
   border: 5px solid rgb(219, 101, 101);
 }
 #gameboard {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 100%;
   border-collapse: collapse;

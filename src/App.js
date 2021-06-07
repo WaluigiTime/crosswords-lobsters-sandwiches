@@ -1,8 +1,6 @@
 import "./styles.css";
 import data from "./real_cross.json";
 
-//Questions for next week Issac :
-//How do we
 export default function App() {
   return (
     <div className="App">
@@ -36,7 +34,6 @@ export function EmptySpace() {
   return;
 }
 
-//line 8: <Table <Row <letter/> /> />
 export function Letter(props) {
   return <td> {props.char} </td>;
 }
@@ -45,11 +42,11 @@ export function Star() {
   return <td class="star"> * </td>;
 }
 
-//Talks about the across and down clues
 export function LittleClues(props) {
   return (
     <p>
-      {props.clue.orientation} {props.clue.number}: {props.clue.stringValue}
+      <b>{props.clue.orientation}</b> <b>{props.clue.number}</b>:{" "}
+      {props.clue.stringValue}
     </p>
   );
 }
@@ -67,8 +64,6 @@ export function AcrossClues(props) {
 }
 
 export function DownClues(props) {
-  // props is an array
-  // Loop over props and pass each clue into the clue component
   return (
     <div>
       {props.data.map((clue) => (
@@ -105,4 +100,3 @@ export function GameBoard(props) {
     </table>
   );
 }
-// thursday
